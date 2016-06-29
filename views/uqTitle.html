@@ -1,0 +1,134 @@
+<div id="title">
+  <div id="hs">
+    <img src="./images/24hs.jpg" alt="" />
+</div>
+  <!--今日看世界 -->
+  <div class="today" ng-inie="show=false"  ng-class="{'show-delete':show}" ng-swipe-left="show=cehua1" ng-swipe-right="show=cehua" >
+      <ul>
+         <li>
+           <div class="back">
+
+           </div>
+           <img src="./images/world.jpg" alt="" class="world"/>
+         </li>
+         <li class="today-ban">
+           <img src="./images/bali.jpg" alt="" />
+           <span>南海永暑礁医院将开业 重大手术可远程指挥</span>
+         </li>
+         <li class="hot-li">
+             <img src="./images/hot1.jpg" alt="" />
+             <p>
+               毛泽东称哪次军事行动是他<br>一生"得意之笔"
+             </p>
+              <span class="hot-name">毛泽东</span>
+              <span class="hot-liulan">27</span>
+         </li>
+
+      </ul>
+  </div>
+
+
+
+
+  <!--more -->
+  <div class="title-add">
+      <img src="./images/add.jpg" alt="" />
+  </div>
+  <!--添加栏目  -->
+  <div class="channel"  style="display: none">
+      <ul class="zichannel">
+          <li>
+              <div class="enter">点击进入频道</div>
+              <div class="edit">编辑</div>
+          </li>
+          <li>
+            <span>头条</span>
+            <span>推荐</span>
+            <span>娱乐</span>
+            <span>本地</span>
+
+          </li>
+          <li>
+            <span>财经</span>
+            <span>自媒体</span>
+            <span>卫视</span>
+            <span>科技</span>
+
+          </li>
+          <li>
+            <span>良品</span>
+            <span>美女</span>
+            <span>军事</span>
+            <span>体育</span>
+
+          </li>
+          <li>
+            <span>历史</span>
+            <span>汽车</span>
+            <span>时尚</span>
+            <span>房产</span>
+
+          </li>
+          <li>
+            <span>FUN来了</span>
+            <span>段子</span>
+            <span>萌物</span>
+          </li>
+          <li><div class="more-channel"><p>更多频道</p></div></li>
+          <li>
+              <span>国际</span>
+              <span>直播</span>
+              <span>评论</span>
+              <span>星座</span>
+          </li>
+          <li>
+              <span>暖新闻</span>
+              <span>NBA</span>
+              <span>台湾</span>
+              <span>电影</span>
+          </li>
+          <li>
+              <span>专题</span>
+              <span>国学</span>
+              <span>中韩交流</span>
+              <span>青年</span>
+          </li>
+          <li>
+              <span>深度</span>
+              <span>旅游</span>
+              <span>健康</span>
+              <span>港澳</span>
+          </li>
+        <li><img src="./images/top.jpg" alt="" class="channel-top"/></li>
+      </ul>
+  </div>
+
+  <!-- 头部开始  -->
+  <div class="nav-title">
+    <div class="swiper-container title">
+     <div class="swiper-wrapper">
+       <div class="swiper-slide"><span>头条</span></div>
+       <div class="swiper-slide"><span>推荐</span></div>
+       <div class="swiper-slide"><span>娱乐</span></div>
+       <div class="swiper-slide"><span>本地</span></div>
+       <div class="swiper-slide"><span>财经</span></div>
+       <div class="swiper-slide"><span>自媒体</span></div>
+       <div class="swiper-slide"><span>凤凰</span></div>
+       <div class="swiper-slide"><span>科技</span></div>
+       <div class="swiper-slide"><span>段子</span></div>
+       <div class	="swiper-slide"><span>房产</span></div>
+       <div class	="swiper-slide"><span>历史</span></div>
+       <div class	="swiper-slide"><span>军事</span></div>
+       <div class	="swiper-slide"><span>直播</span></div>
+
+     </div>
+   </div>
+  </div>
+
+  <script>
+  var mySwiper = new Swiper('.title',{
+  slidesPerView : 6,
+  slidesPerGroup : 6,
+  })
+  </script>
+</div>

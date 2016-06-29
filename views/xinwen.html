@@ -1,0 +1,39 @@
+<!-- banner开始 -->
+<div class="swiper-container ban" id="xinwen">
+     <div class="swiper-wrapper ">
+         <div class="swiper-slide">
+           <img src="./images/bali.jpg" alt="" />
+           <p>
+            巴黎：被遗忘的老人和建筑
+           </p>
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/ail.jpg" alt="" />
+           <p>
+            1.6万人出席拳王阿里得葬礼
+           </p>
+         </div>
+         <div class="swiper-slide">
+           <img src="./images/2.jpg" alt="" />
+           <p>
+            男子掉入黄石公园93度温泉尸骨无存
+           </p>
+         </div>
+     </div>
+ </div>
+ <script>
+var ban = new Swiper('.ban');
+</script>
+
+<div class="main">
+   <ul id="xinwen" ng-controller="xinwenCtrl">
+       <li ng-repeat="v in xinwenList" >
+       <img src="{{v.image}}" alt="" />
+       <p>
+         {{v.title}}
+       </p>
+       <span class="zuanti">{{v.zuanti}}</span>
+       <span class="liulan">{{v.liulan}}</span>
+     </li>
+   </ul>
+</div>

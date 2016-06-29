@@ -1,0 +1,38 @@
+<body ng-controller="indexCtrl" class="ng-scope">
+  <!-- ngIf: isFirstOpen -->
+  <div id="top-tab">
+  <div class="row black text-white">
+    <ul class="tabs black text-white">
+      <li class="tab col s3"><a href="#/guonei" class="active">Local </a></li>
+      <li class="tab col s3"><a href="#/guowai" class="">Global</a></li>
+      <li class="tab col s3"><a href="#test3" class="">Picture</a></li>
+      <li class="tab col s3"><a href="#test4">video</a></li>
+    </ul>
+    <div class="zhishitiao" style="left: 0%;"></div>
+  </div>
+</div>
+  <!-- ngView: --><ng-view class="ng-scope"><div id="guonei" class="ng-scope">
+  <div class="container">
+
+    <!-- ngRepeat: v in tupianList --><div ng-repeat="v in tupianList" class="card small  ng-scope">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" ng-src="images/a1.jpg" src="images/a1.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4 ng-binding">嘻嘻嘻 <i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="#" class="ng-binding">啊打发发发打发</a></p>
+        </div>
+      </div><!-- end ngRepeat: v in tupianList -->
+    </div>
+
+   <!-- ngRepeat: v in wenziList --><div ng-repeat="v in wenziList" class="collection-item avatar ng-scope">
+     <span class="title ng-binding">....</span>
+     <p class="ng-binding">aaaaaaaaaaaaaaaaaaa</p>
+     <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+   </div><!-- end ngRepeat: v in wenziList -->
+  </div>
+
+</ng-view>
+
+
+</body>

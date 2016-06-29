@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  font-family: '微软雅黑',sans-serif;
+}
+
+#bd-yindao .enter, #bd-yindao h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#bd-yindao.ng-leave {
+  transition: all .8s ease;
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+#bd-yindao.ng-leave-active {
+  opacity: 0;
+  transform: scale(0, 0);
+}
+
+#bd-yindao {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  margin: auto;
+  background: #68c844;
+}
+
+@keyframes tiao {
+  0% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+#bd-yindao .swiper-slide-active h1 {
+  animation: tiao .3s  ease both;
+}
+
+#bd-yindao .enter {
+  position: absolute;
+}
+
+#bd-yindao h1 {
+  transform: translateY(-500px);
+  background: red;
+  width: 260px;
+  height: 100px;
+  color: #fff;
+  z-index: 100000;
+}
+
+#bd-yindao .swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#bd-yindao .swiper-slide img {
+  width: 100%;
+}
+
+#bd-yindao .swiper-container-horizontal > .swiper-pagination-bullets {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#bd-yindao .swiper-pagination-bullet-active {
+  background: green;
+  width: 20px;
+  height: 20px;
+}
+
+#top-tab {
+  position: relative;
+}
+
+#top-tab a.active {
+  color: green;
+}
+
+#top-tab .zhishitiao {
+  transition: left .8s ease;
+  width: 25%;
+  height: 10px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=map/index.css.map */

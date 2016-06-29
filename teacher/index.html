@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bdnews">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>百度新闻</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/swiper.jquery.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-animate.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+  <bd-yindao ng-if="isFirstOpen"></bd-yindao>
+  <bd-top-tab></bd-top-tab>
+  <ng-view></ng-view>
+</body>
+</html>

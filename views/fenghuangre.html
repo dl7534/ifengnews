@@ -1,0 +1,27 @@
+<!--凤凰热  -->
+<div class="ifhot" ng-controller="fenghuanghotCtrl" >
+   <ul>
+      <li class="hot-title">
+         <span class="like" ng-click="hottoggle">
+           猜你喜欢
+         </span>
+
+         <span class="read">
+           我的订阅
+         </span>
+      </li>
+    <div class="hot-box">
+      <li class="hot-li" ng-repeat="v in hotList">
+          <img src="{{v.image}}" alt="" />
+          <p>
+            {{v.title}}
+          </p>
+           <span class="hot-name">{{v.hotname}}</span>
+           <span class="hot-liulan">{{v.liuyan}}</span>
+      </li>
+    </div>
+    <li class="hot-caini">
+      <img src="./images/caini.jpg" alt="" />
+    </li>
+   </ul>
+</div>
